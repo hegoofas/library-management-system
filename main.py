@@ -491,7 +491,9 @@ class Manager:
                         self.screen.show_message(
                             "Thank You for Using the Library System")
                         break 
-
+            elif attempts > 3 :
+                self.screen.show_message("Sorry, you have used up the required number of attempts.")
+                break
             else:
                 self.screen.show_message(
                     "Invalid ID or Password. Please Try Again.")
